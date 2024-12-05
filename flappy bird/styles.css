@@ -1,0 +1,43 @@
+/* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #6dc2e7, #f2d79f);
+    font-family: Arial, sans-serif;
+  }
+  
+  #game-container {
+    position: relative;
+    border: 10px solid transparent;
+    border-image: url('https://i.imgur.com/QZbI6S1.png') 30 round; /* Patterned border */
+  }
+  
+  canvas {
+    display: block;
+    background: url('https://i.postimg.cc/DZyvHGDK/flappy-bird-background-gecj5m4a9yhhjp87.jpg') center/cover no-repeat; /* Canvas background */
+  }
+  
+  #gameOverPopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+    display: none; /* Initially hidden */
+  }
+  
+  #retryButton {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
